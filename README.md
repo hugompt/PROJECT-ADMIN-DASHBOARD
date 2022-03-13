@@ -2,7 +2,7 @@
 
 ⚙️ Admin Dashboard
 
-Example page of a web admin dashboard, made with HTML and CSS, with heavy use of CSS Grid.
+Mock-up page of a web admin dashboard, made with HTML and CSS, heavy use of CSS Grid.
 
 🚧 WORK IN PROGRESS 🚧
 
