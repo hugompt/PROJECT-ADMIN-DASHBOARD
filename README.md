@@ -6,6 +6,6 @@ Example page of a web admin dashboard, made with HTML and CSS, with heavy use of
 
 🚧 WORK IN PROGRESS 🚧
 
---
-Best,
+-- </br>
+Best,</br>
 Hugo
