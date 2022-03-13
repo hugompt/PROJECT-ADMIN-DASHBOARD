@@ -18,15 +18,15 @@
 }
 
 .header{
-    padding: 5%;
-    height: fit-content;
+    padding: 2%;
+    height: 30%;
     box-shadow: 3px 3px 3px 2px rgb(16, 154, 228);
 
 }
 
 .header .top{
     display:grid;
-    grid-template-columns: repeat(20, 1fr);
+    grid-template-columns: repeat(19, 1fr);
     align-items: center;
 }
 
@@ -100,7 +100,15 @@
     font-size: 25px;
     font-weight: 700;
     line-height: 50px;
+    min-width: fit-content;
+    max-width: fit-content;
     transition: transform .3s;
+    
+}
+
+.auxCenter{
+    display: flex;
+    gap: 15px;
 }
 
 .notificationBell:hover,
@@ -142,7 +150,7 @@
 .userNameHandle{
     font-size: 2rem;
     font-weight: 900;
-    flex-shrink: 0;
+    width: 200%;
 }
 
 .containerButtons{
