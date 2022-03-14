@@ -330,7 +330,7 @@
 
 .cardTitle{
     font-weight: 700;
-    font-size: large;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -405,8 +405,12 @@
 }
 
 
-/* Tooltips */
-.tooltip {
+
+
+
+/* Tooltips for icons on cards*/
+.tooltip,
+.tooltipClick {
     position: relative;
     display: inline-block;
   }
@@ -414,7 +418,8 @@
   .tooltiptext{
       margin-bottom: 5px;
   }
-  .tooltip .tooltiptext {
+  .tooltip .tooltiptext,
+  .tooltipClick .tooltipClicktext {
     visibility: hidden;
     width: 120px;
     background-color: rgb(117, 112, 112);
@@ -430,7 +435,7 @@
     
     /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
   }
   
   .tooltip:hover .tooltiptext {
@@ -438,7 +443,8 @@
     opacity: 1;
   }
 
-  .tooltip .tooltiptext::after {
+  .tooltip .tooltiptext::after,
+  .tooltipClick .tooltipClicktext::after {
     content: " ";
     position: absolute;
     top: 100%; /* At the bottom of the tooltip */
@@ -448,3 +454,10 @@
     border-style: solid;
     border-color: rgb(117, 112, 112) transparent transparent transparent;
   }
+
+  .tooltipClick:active .tooltipClicktext{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  
