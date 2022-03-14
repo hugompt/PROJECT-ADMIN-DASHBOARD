@@ -314,6 +314,7 @@
     height: 90%;    
 }
 .card{
+    font-size:large;
     border-left: 5px solid blue;
     border-radius: 5px;
     background-color: white;
@@ -331,22 +332,41 @@
     margin-bottom: 5px;
 }
 
+.cardIcons{
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
 .icon1{
     display: block;
     flex-shrink: 0;
     width: 33px;
-    height: 20px;
+    height: 24px;
     background-size: contain;
     content: '';
-    background-image: url(./imgs/star-plus-outline.png) no-repeat 20px center;
+    background: url(./imgs/bookmark_add_black_24dp.svg) no-repeat center center;
 }
 
 .icon2{
-    background: url(./imgs/home_white_24dp.svg) no-repeat 20px center;
+    display: block;
+    flex-shrink: 0;
+    width: 33px;
+    height: 24px;
+    background-size: contain;
+    content: '';
+    background: url(./imgs/visibility_black_24dp.svg) no-repeat center center;
 }
 
 .icon3{
-    background: url(./imgs/home_white_24dp.svg) no-repeat 20px center;
+    display: block;
+    flex-shrink: 0;
+    width: 33px;
+    height: 24px;
+    background-size: contain;
+    content: '';
+    background: url(./imgs/content_copy_black_24dp.svg) no-repeat center center;
 }
 
 
