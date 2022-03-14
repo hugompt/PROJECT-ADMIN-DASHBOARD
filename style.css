@@ -6,7 +6,8 @@
     /* outline: 1px solid red; */
     list-style: none;
     font-family: 'Hubballi', cursive, sans-serif;
-
+    box-sizing: border-box;
+    outline: none;
 }
 
 .container{
@@ -195,7 +196,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    height: 240%;
+    height: 200%;
     width: 100%;
     background: #78c7d2;
     -webkit-transition: all .3s ease-in-out;
@@ -303,6 +304,7 @@
 
 .main{
     background-color: rgb(225, 242, 247);
+
 }
 
 .mainGrid{
@@ -311,7 +313,7 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
     align-items: stretch;
-    height: 90%;    
+    height: 100%;    
 }
 .card{
     font-size:large;
@@ -336,7 +338,14 @@
     display: flex;
     justify-content: end;
     margin-top: auto;
-    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.icon1:hover,
+.icon2:hover,
+.icon3:hover{
+    cursor: pointer;
 }
 
 .icon1{
@@ -394,3 +403,48 @@
 .fa-github:hover {
     transform: rotate(360deg) scale(1.5);
 }
+
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltiptext{
+      margin-bottom: 5px;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(117, 112, 112);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(117, 112, 112) transparent transparent transparent;
+  }
