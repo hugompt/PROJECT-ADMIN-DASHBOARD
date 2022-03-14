@@ -308,12 +308,13 @@
 }
 
 .mainGrid{
-    padding: 20px;
+    padding: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 30px;
     align-items: stretch;
-    height: 100%;    
+    height: 100%;  
+    max-width: 975px;  
 }
 .card{
     font-size:large;
@@ -324,8 +325,13 @@
     padding: 5%;
     display: flex;
     flex-direction: column;
-    min-height: 90%;
+    min-height: 235px;
 
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor:default;
 }
 
 .cardTitle{
@@ -419,7 +425,7 @@
       margin-bottom: 5px;
   }
   .tooltip .tooltiptext,
-  .tooltipClick .tooltipClicktext {
+  .tooltipClick .tooltipClicktext, .tt3 {
     visibility: hidden;
     width: 120px;
     background-color: rgb(117, 112, 112);
