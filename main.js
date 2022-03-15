@@ -38,10 +38,17 @@ for (let i = 0; i < cards.length; i++) {
         navigator.clipboard.writeText((cardTitle[i].textContent +
              cardText[i].textContent).replace(/[ \t]{1,}/g, ' '));
     });
-        iconsCopy[i].addEventListener('mouseleave',function(){
-            tooltipText[i].style.visibility = 'hidden';
-            tooltipText[i].style.opacity = 0;
-        });
+    iconsCopy[i].addEventListener('mouseleave',function(){
+        tooltipText[i].style.visibility = 'hidden';
+        tooltipText[i].style.opacity = 0;
+        tooltipCopyText[i].style.visibility = 'hidden';
+        tooltipCopyText[i].style.opacity = 0;
+
+    });
+    iconsCopy[i].addEventListener('mouseenter',function(){
+        tooltipCopyText[i].style.visibility = 'visible';
+        tooltipCopyText[i].style.opacity = 1;
+    });
 }
 
 upload.addEventListener("click", function(){

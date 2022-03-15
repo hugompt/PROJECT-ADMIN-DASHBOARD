@@ -421,11 +421,15 @@
     display: inline-block;
   }
   
+  .tooltipClick{
+      z-index: 2;
+  }
+  
   .tooltiptext{
       margin-bottom: 5px;
   }
   .tooltip .tooltiptext,
-  .tooltipClick .tooltipClicktext, .tt3 {
+  .tooltipClick .tooltipClicktext {
     visibility: hidden;
     width: 120px;
     background-color: rgb(117, 112, 112);
@@ -444,7 +448,8 @@
     transition: opacity 0.5s;
   }
   
-  .tooltip:hover .tooltiptext {
+  .tooltip:hover .tooltiptext,
+  .tooltip:hover .tt2 {
     visibility: visible;
     opacity: 1;
   }
@@ -465,5 +470,4 @@
     visibility: visible;
     opacity: 1;
   }
-
   
