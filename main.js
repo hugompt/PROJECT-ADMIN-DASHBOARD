@@ -54,3 +54,10 @@ for (let i = 0; i < cards.length; i++) {
 upload.addEventListener("click", function(){
     $('#filez').click();
 })
+
+
+$(document).ready(function() {
+    $(".mainGridTitle").css({
+      'width': ($(".mainGrid").width() + 'px')
+    });
+  });

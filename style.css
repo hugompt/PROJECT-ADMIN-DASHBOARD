@@ -302,19 +302,34 @@
 
 /* Main content of webpage code below */
 
+.titles{
+ display: flex;
+
+}
 .main{
     background-color: rgb(225, 242, 247);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(fit-content, fit-content));
+    grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
 
 }
 
+/* Projects code below */
+.mainGridTitle, .announcementsTitle{
+    font-size: 30px;
+    padding: 10px;
+}
+
 .mainGrid{
-    padding: 50px;
+    padding: 20px;
+
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 30px;
+        gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     align-items: stretch;
-    height: 100%;  
-    max-width: 975px;  
+    height: 95%;  
+    max-width: 70%;  
+    border-right: 5px solid rgb(13, 220, 235);
 }
 .card{
     font-size:large;
@@ -325,7 +340,6 @@
     padding: 5%;
     display: flex;
     flex-direction: column;
-    min-height: 235px;
 
 }
 
@@ -383,6 +397,21 @@
     content: '';
     background: url(./imgs/content_copy_black_24dp.svg) no-repeat center center;
 }
+
+
+/* Announcements code part */
+
+.announcementsTitle{
+    /* grid-column: col 15 / 15; */
+}
+
+
+
+
+
+
+
+
 
 
 /* Footer code below */
