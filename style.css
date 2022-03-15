@@ -302,33 +302,37 @@
 
 /* Main content of webpage code below */
 
-.titles{
- display: flex;
-
+.h3{
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
 }
+
 .main{
     background-color: rgb(225, 242, 247);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(fit-content, fit-content));
-    grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
+    grid-template-columns: 2.5fr 1fr;
+    overflow-y: scroll;
 
 }
 
 /* Projects code below */
-.mainGridTitle, .announcementsTitle{
-    font-size: 30px;
-    padding: 10px;
+
+h1{
+    padding: 20px 0 0 10px;
+    border-right: 5px solid rgb(13, 220, 235);
+}
+
+#titleAnoun{
+    position: relative;
+    top: 500px;
 }
 
 .mainGrid{
     padding: 20px;
-
     display: grid;
-        gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    align-items: stretch;
-    height: 95%;  
-    max-width: 70%;  
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 250px;
     border-right: 5px solid rgb(13, 220, 235);
 }
 .card{
@@ -340,7 +344,6 @@
     padding: 5%;
     display: flex;
     flex-direction: column;
-
 }
 
 .card:hover{
@@ -418,14 +421,14 @@
 .footer{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(162, 190, 192);
-    text-align: center;
-    grid-area: 3/1/3/3;
     color: white;
     text-shadow: 2px 2px rgb(165, 163, 163);
-    height: fit-content;
     padding: 10px;
     position: relative;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
 }
 .fa-github {
