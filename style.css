@@ -301,38 +301,30 @@
 
 
 /* Main content of webpage code below */
-
-.h3{
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-}
-
 .main{
     background-color: rgb(225, 242, 247);
     display: grid;
     grid-template-columns: 2.5fr 1fr;
+    grid-auto-flow: dense;
     overflow-y: scroll;
 
 }
 
 /* Projects code below */
-
 h1{
     padding: 20px 0 0 10px;
-    border-right: 5px solid rgb(13, 220, 235);
 }
 
-#titleAnoun{
-    position: relative;
-    top: 500px;
+#titleProjs{
+    border-right: 5px solid rgb(13, 220, 235);
 }
 
 .mainGrid{
     padding: 20px;
     display: grid;
     gap: 2rem;
+    grid-area: 2/1;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 250px;
     border-right: 5px solid rgb(13, 220, 235);
 }
 .card{
@@ -403,19 +395,41 @@ h1{
 
 
 /* Announcements code part */
-
-.announcementsTitle{
-    /* grid-column: col 15 / 15; */
+#titleAnoun{
+    position: relative;
+    grid-area: 1/2/1/2;
 }
 
+.rightBar{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2/2/2/2;
+    margin: 1rem;
+}
 
+.announcements .card{
+    border: 0;
+    padding: 20px;
 
+}
 
+.announcements .card:hover{
+    transform: none;
+}
 
+.announcTitles{
+    font-size: 20px;
+    font-weight: 700;
+}
 
+.announcText{
+    margin-bottom: 1rem;
+}
 
-
-
+.line{
+    border-top: 2px solid gray;
+    padding-top: 1rem;
+}
 
 /* Footer code below */
 .footer{
