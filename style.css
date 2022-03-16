@@ -306,8 +306,7 @@
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-auto-flow: dense;
-    overflow-y: scroll;
-
+    overflow-y: scroll;    
 }
 
 /* Projects code below */
@@ -429,6 +428,71 @@ h1{
 .line{
     border-top: 2px solid gray;
     padding-top: 1rem;
+}
+
+
+/* Trending code part */
+#titleTrend{
+    margin-top: 2rem;
+    margin-left: -1rem;
+}
+
+.trending .card{
+    border: 0;
+    padding: 20px;
+
+}
+
+.trending .card:hover{
+    transform: none;
+}
+
+.trendCont{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0.5rem 0.5rem;
+}
+
+.trendCont:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#img1{
+    background: url(./imgs/profPic1.jpg) center center;
+    background-size: cover;
+}
+
+#img2{
+    background: url(./imgs/profPic2.jpg) center center;
+    background-size: cover;
+}
+
+#img3{
+    background: url(./imgs/profPic3.jpg) center center;
+    background-size: cover;
+}
+
+.profPic{
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    content: '';
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    grid-row: span 2;
+}
+
+.trendCont .handle{
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.trendCont .handle,
+.trendCont .nickName{
+    margin-left: 1rem;
 }
 
 /* Footer code below */
