@@ -12,8 +12,6 @@ let upload = document.querySelector('.upload');
 //Function to change visibility of the card text
 //after the user clicked on the eye logo
 for (let i = 0; i < (cards.length - 2); i++) {
-    console.log(iconsEye[i]);
-
     iconsEye[i].addEventListener("click", function() {
         if(cardText[i].style.visibility == 'hidden'){
             cardText[i].style.visibility = 'visible';
