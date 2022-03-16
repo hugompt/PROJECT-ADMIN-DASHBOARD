@@ -11,7 +11,9 @@ let upload = document.querySelector('.upload');
 
 //Function to change visibility of the card text
 //after the user clicked on the eye logo
-for (let i = 0; i < cards.length; i++) {
+for (let i = 0; i < (cards.length - 2); i++) {
+    console.log(iconsEye[i]);
+
     iconsEye[i].addEventListener("click", function() {
         if(cardText[i].style.visibility == 'hidden'){
             cardText[i].style.visibility = 'visible';
@@ -28,7 +30,7 @@ for (let i = 0; i < cards.length; i++) {
 //Function to copy text from card
 //after user clicked on the clipboard icon
 //and also tooltip for visual confirmation
-for (let i = 0; i < cards.length; i++) {
+for (let i = 0; i < (cards.length-2); i++) {
     iconsCopy[i].addEventListener("click", function() {
         tooltipCopyText[i].style.visibility = 'hidden';
         tooltipCopyText[i].style.opacity = 0;
@@ -55,9 +57,3 @@ upload.addEventListener("click", function(){
     $('#filez').click();
 })
 
-
-$(document).ready(function() {
-    $(".mainGridTitle").css({
-      'width': ($(".mainGrid").width() + 'px')
-    });
-  });
